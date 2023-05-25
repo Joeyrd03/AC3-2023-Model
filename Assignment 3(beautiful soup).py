@@ -16,8 +16,6 @@ html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the anchor tags
-
-
 for x in range(7):
     if x != 0:
         html = urllib.request.urlopen(tag, context=ctx).read()
